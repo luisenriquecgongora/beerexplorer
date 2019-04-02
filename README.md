@@ -7,4 +7,4 @@ To run the app you must have Node Installed.
 2. Run: npm install && npm start
 
 # Demo
-A live demo is located [here](https://beerexplorer.oracliom.com/). The following is a representation of the App. ![Preview of Beer Explorer](/public/media/preview_punkapp.png)
+A live demo is located [here](https://beerexplorer.oracliom.com/). The following is a representation of the App. ![Preview of Beer Explorer](./public/media/preview_punkapp.png)
