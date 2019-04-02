@@ -1,32 +1,151 @@
-.App {
-  text-align: center;
+.font-body{
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.font-upper-case {
+  font-family: 'Righteous', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.font-tagline-size{
+  font-size: small;
 }
 
-.App-link {
-  color: #61dafb;
+.yellow-space{
+  background-color: RGB(245,195,78);
+  width: 10%;
+  height: 4px;
 }
 
-@keyframes App-logo-spin {
+.yellow-color{
+  color : RGB(245,195,78);
+}
+
+.grey-color{
+  color : RGB(115,115,115);
+}
+
+.padding-card{
+  padding: 2% !important;
+}
+
+.card-beer-square{
+  position: relative;
+  width: 100% !important;
+  padding-top: 100% !important;
+}
+
+.card-beer-container{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  background: #FFFFFF;
+  box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.17);
+  border-radius: 6px;
+}
+
+.card-beer-container-modal{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.07);;
+}
+
+.card-beer-container:hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  -webkit-animation: mymove 0.2s; /* Safari 4.0 - 8.0 */
+  animation: mymove 0.2s;
+}
+
+@-webkit-keyframes mymove {
+    from {
+      width: 90%;
+      height: 90%;
+      top: 5%;
+      left: 5%;
+    }
+    to {
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+    }
+}
+
+/* Standard syntax */
+@keyframes mymove {
   from {
-    transform: rotate(0deg);
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
   }
   to {
-    transform: rotate(360deg);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+  }
+}
+
+.image-beer-card{
+  height: 60%;
+  width: auto;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.title-card{
+  font-size: large;
+}
+
+.modal-view{
+  padding: 0px !important;
+  margin: 0px !important;
+  position: fixed !important;
+  left: 25% !important;
+  top: 5% !important;
+  width: 50% !important;
+  height: 90% !important;
+  overflow: scroll !important;
+}
+
+.img-modal{
+  width: 100%;
+  min-height: 30%;
+}
+
+.modal-content{
+  padding: 3%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.card-guess{
+  height: 200px;
+  width: 100%;
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-view{
+    left: 5% !important;
+    top: 5% !important;
+    width: 90% !important;
+    height: 90% !important;
+    overflow: scroll;
+  }
+
+  .img-modal{
+    margin-left: 40%;
+    width: 20%;
   }
 }
